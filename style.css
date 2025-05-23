@@ -1,0 +1,31 @@
+* {
+    background: linear-gradient(150deg,#000000, #1b1b1b);\
+}
+.home h1{
+    text-align: center;
+    font-style: italic;
+    font-family: "Georgia", "Times New Roman", "Palatino", serif;
+    color: rgb(175, 175, 175);
+    font-size: 60px;
+    margin-bottom: -20px;
+}
+.home h6{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.baleno {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#balenoimg {
+    height: 250px;
+    width: auto;
+    flex-shrink: 0;
+}
+#balenotext {
+    color: beige;
+    flex-grow: 1;
+}
