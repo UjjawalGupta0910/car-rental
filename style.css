@@ -21,7 +21,7 @@
     gap: 20px;
 }
 #balenoimg {
-    height: 390px;
+    height: 70vw;
     width: auto;
     flex-shrink: 0;
 }
@@ -36,7 +36,7 @@
     gap: 20px;
 }
 #brezzaimg {
-    height: 390px;
+    height: 70vw;
     width: auto;
     flex-shrink: 0;
 }
@@ -51,7 +51,7 @@
     gap: 20px;
 }
 #i20img {
-    height: 590px;
+    height: 70vw;
     width: auto;
     flex-shrink: 0;
 }
