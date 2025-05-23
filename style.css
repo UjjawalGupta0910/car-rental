@@ -1,5 +1,5 @@
 * {
-    background: linear-gradient(150deg,#000000, #1b1b1b);\
+    background: linear-gradient(150deg,#000000, #1b1b1b);
 }
 .home h1{
     text-align: center;
@@ -22,12 +22,8 @@
 }
 #balenoimg {
     height: auto;
-    width: 70vw;
+    width: 100vw;
     flex-shrink: 0;
-}
-#balenotext {
-    color: beige;
-    flex-grow: 1;
 }
 
 .brezza {
@@ -37,12 +33,8 @@
 }
 #brezzaimg {
     height: auto;
-    width: 70vw;
+    width: 100vw;
     flex-shrink: 0;
-}
-#brezzatext {
-    color: beige;
-    flex-grow: 1;
 }
 
 .i20 {
@@ -52,10 +44,6 @@
 }
 #i20img {
     height: auto;
-    width: 70vw;
+    width: 100vw;
     flex-shrink: 0;
-}
-#i20text {
-    color: beige;
-    flex-grow: 1;
 }
