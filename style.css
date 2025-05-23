@@ -21,11 +21,41 @@
     gap: 20px;
 }
 #balenoimg {
-    height: 250px;
+    height: 390px;
     width: auto;
     flex-shrink: 0;
 }
 #balenotext {
+    color: beige;
+    flex-grow: 1;
+}
+
+.brezza {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#brezzaimg {
+    height: 390px;
+    width: auto;
+    flex-shrink: 0;
+}
+#brezzatext {
+    color: beige;
+    flex-grow: 1;
+}
+
+.i20 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#i20img {
+    height: 590px;
+    width: auto;
+    flex-shrink: 0;
+}
+#i20text {
     color: beige;
     flex-grow: 1;
 }
