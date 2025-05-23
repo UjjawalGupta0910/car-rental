@@ -21,8 +21,8 @@
     gap: 20px;
 }
 #balenoimg {
-    height: 70vw;
-    width: auto;
+    height: auto;
+    width: 70vw;
     flex-shrink: 0;
 }
 #balenotext {
@@ -36,8 +36,8 @@
     gap: 20px;
 }
 #brezzaimg {
-    height: 70vw;
-    width: auto;
+    height: auto;
+    width: 70vw;
     flex-shrink: 0;
 }
 #brezzatext {
@@ -51,8 +51,8 @@
     gap: 20px;
 }
 #i20img {
-    height: 70vw;
-    width: auto;
+    height: auto;
+    width: 70vw;
     flex-shrink: 0;
 }
 #i20text {
