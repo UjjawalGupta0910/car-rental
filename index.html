@@ -1,38 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaudhary Car Rental</title>
+    <title>Chaudhary Car Rental - Quality Vehicles at Affordable Prices</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="home">
-        <p>
-            <h1>                                                        <!-- brand name-->              
-                <u>Chaudhary Car Rental</u>
-            </h1>
-            <h6><i>Affordable, Reliable and Convnient Car Rental</h6></i>
-        </p>
-        <br><br><br><br>
-        <hr>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Chaudhary Car Rental</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Our Cars</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Quality Cars at Affordable Prices</h1>
+                <p>Explore your destination in comfort and style with our wide selection of vehicles</p>
+                <a href="#cars" class="btn">Browse Cars</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars-section" id="cars">
+        <div class="container">
+            <h2 class="section-title">Our Fleet</h2>
+            <div class="cars-grid">
+                <!-- Car 1 -->
+                <div class="car-card" onclick="openModal('modal1')">
+                    <img src="https://imgs.search.brave.com/nPRMTa9tKXxee2K4zT18sNptGgts0YWVXr0v2D_oaT0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vandKa2Nz/dUtDMzhkYjh1SXZx/QTdYdUhpUUdfcWFj/dm1Ya0w1Zi1ybEND/NC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/WVhKci9jR3gxY3k1/cGJ5OWZibVY0L2RD/OXBiV0ZuWlQ5MWNt/dzkvYUhSMGNITTZM/eTl3WVhKci9jR3gx/Y3kxaWEzUXRhVzFu/L0xuQmhjbXR3YkhW/ekxtbHYvTDNCeWIy/UjFZM1JwYjI0di9Z/M0poZDJ4bGNpOXdk/V0pzL2FXTXZRM0po/ZDJ4bGNqUmgvTkRW/bE1qQmxOemszWlRF/eC9aV1U0WmpNM01q/ZGlZak01L1ltTXha/RFV4WHpJd01qTXgv/TVRBeU1UZ3hPVFF5/TlRNMS9Oamc0TG1w/d1p5WjNQVE00L05E/QW1jVDAzTlE" alt="Maruti Suzuki Baleno" class="car-img">
+                    <div class="car-info">
+                        <h3>Maruti Suzuki Baleno</h3>
+                        <div class="car-price">₹2600/day</div>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card" onclick="openModal('modal2')">
+                    <img src="https://imgs.search.brave.com/OGzQg6-Yw6lNmrZc7EboQV2x8G591C7oRjjnq5Fn4xk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vSm5pT0tE/Ulp0LVlWT0xHdWx4/X2dBT2JjNjJwM3Nr/aUo1R18xM2k2MHZt/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/WVhKci9jR3gxY3k1/cGJ5OWZibVY0L2RD/OXBiV0ZuWlQ5MWNt/dzkvYUhSMGNITTZM/eTl3WVhKci9jR3gx/Y3kxaWEzUXRhVzFu/L0xuQmhjbXR3YkhW/ekxtbHYvTDNCeWIy/UjFZM1JwYjI0di9Z/MmhoY21sdmRGOXpk/R0ZuL2FXNW5MM0Ix/WW14cFl5OWwvZUhS/bGNtbHZjbWx0WVdk/bC9NVGN4YW5CbmFX/MWhaMlZmL01qQXlN/ekE0TURneE9ERTMv/TkRnM05EYzROVGt1/YW5Cbi9KbmM5TXpn/ME1DWnhQVGMx" alt="Maruti Suzuki Brezza" class="car-img">
+                    <div class="car-info">
+                        <h3>Maruti Suzuki Brezza(CNG-petrol)</h3>
+                        <div class="car-price">₹3200/day</div>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card" onclick="openModal('modal3')">
+                    <img src="https://imgs.search.brave.com/qetyHSmHyrAxmpXh0C6nAC9VcjTj9EUuKlyV4Ixv4SI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vM3lEMzhN/S2FxMjllYlZiRlkt/QklTWmdPUTE4N2Uy/VjRRUkpMOEU5eF85/Yy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9kak5qWVhK/ekxtTnZiUzl0L1pX/UnBZUzlqYjI1MFpX/NTAvTHpZd016TXlN/akF5TVMxby9lWFZ1/WkdGcExXVnNhWFJs/L0xXa3lNQzVxY0dj" alt="Hyundai i20" class="car-img">
+                    <div class="car-info">
+                        <h3>Hyundai i20(CNG)</h3>
+                        <div class="car-price">₹2800/day</div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card" onclick="openModal('modal4')">
+                    <img src="https://imgs.search.brave.com/OGzQg6-Yw6lNmrZc7EboQV2x8G591C7oRjjnq5Fn4xk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vSm5pT0tE/Ulp0LVlWT0xHdWx4/X2dBT2JjNjJwM3Nr/aUo1R18xM2k2MHZt/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/WVhKci9jR3gxY3k1/cGJ5OWZibVY0L2RD/OXBiV0ZuWlQ5MWNt/dzkvYUhSMGNITTZM/eTl3WVhKci9jR3gx/Y3kxaWEzUXRhVzFu/L0xuQmhjbXR3YkhW/ekxtbHYvTDNCeWIy/UjFZM1JwYjI0di9Z/MmhoY21sdmRGOXpk/R0ZuL2FXNW5MM0Ix/WW14cFl5OWwvZUhS/bGNtbHZjbWx0WVdk/bC9NVGN4YW5CbmFX/MWhaMlZmL01qQXlN/ekE0TURneE9ERTMv/TkRnM05EYzROVGt1/YW5Cbi9KbmM5TXpn/ME1DWnhQVGMx" alt="Maruti Suzuki Brezza" class="car-img">
+                    <div class="car-info">
+                        <h3>Maruti Suzuki Brezza(Petrol)</h3>
+                        <div class="car-price">₹3000/day</div>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card" onclick="openModal('modal5')">
+                    <img src="https://imgs.search.brave.com/VpRMVdOsubFLGdEBmCwmpvfFXxcaEKx5c5860Vx22ZU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vbE80Vzd3/c0ZWZkRxN2ZrR2U5/a2xCOHFfTHBjUE1s/NXdISWR6c0NqdzNK/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9ZWFYwYjNa/cGMzUmhMbWx1L0wy/RnpjMlYwY3k5cGJX/Y3YvYm1WM1gyTmhj/bk5mWTI5cy9iM1Z5/WDNaaGNtbGhiblJ6/L0wzTjNhV1owTFdO/dmJHOTEvY2kxemIy/eHBaQzFtYVhKbC9M/WEpsWkM1cWNHYw" alt="Maruti Suzuki Swift" class="car-img">
+                    <div class="car-info">
+                        <h3>Maruti Suzuki Swift</h3>
+                        <div class="car-price">₹2600/day</div>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card" onclick="openModal('modal6')">
+                    <img src="https://imgs.search.brave.com/Gc82pMiBjPsefUCgfagv6QmbSDupPzZ5x51yzETABVM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vbTBGUVpE/MVh2bHpDNmdQbjZ5/Q25iMXZaMl90ZmZC/YkpObG5sam1pam1K/Zy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlq/YjI1MC9aVzUwTG1O/aGNteGxiRzh1L1ky/OXRMM1Z3Ykc5aFpI/TXYvYlc5a1pXd3Zi/V0ZvYVc1ay9jbUV0/ZEdoaGNpMHhMbmRs/L1luQQ" alt="Mahindra Thar" class="car-img">
+                    <div class="car-info">
+                        <h3>Mahindra Thar</h3>
+                        <div class="car-price">₹6500/day</div>
+                    </div>
+                </div>
+
+                <!-- Car 7 -->
+                <div class="car-card" onclick="openModal('modal7')">
+                    <img src="https://imgs.search.brave.com/VubSCF96lKH3qHcooAQ8Gc3jLE86WYEhAXhY6quWSrM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vVTBZZlUt/STRyQl9RZUJIamRD/UW9BelZZQURLbmNk/T2pmQ081WnhMS1gy/dy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/YldjdS9aWFJpTW1K/cGJXY3VZMjl0L0wy/bHRaM1l5TDNkcFpI/Um8vTFRNMk9DeG9a/V2xuYUhRdC9NekV4/TEhKbGMybDZaVjl0/L2IyUmxMVEV2Y21W/MFlXbHMvWDJacGJH/VnpMMk55WlhSaC9M/VEUyTmpVME9USTJO/REl0L2NISnZaQzEy/WVhJdWFuQm4" alt="Hyundai Creta" class="car-img">
+                    <div class="car-info">
+                        <h3>Hyundai Creta</h3>
+                        <div class="car-price">₹4000/day</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chaudhary Car Rental</h3>
+                    <p>Quality vehicles at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Address: B-244 Gamma-I, Greater Noida</p>
+                    <p>Phone: 9568968917 <br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 8279744384 <br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;7900644897 <br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;8382815511</p>
+                    <p>Email: amittomar8279@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#cars">Our Cars</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Car Detail Modals -->
+    <!-- Modal 1 - Toyota Corolla -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/nPRMTa9tKXxee2K4zT18sNptGgts0YWVXr0v2D_oaT0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vandKa2Nz/dUtDMzhkYjh1SXZx/QTdYdUhpUUdfcWFj/dm1Ya0w1Zi1ybEND/NC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/WVhKci9jR3gxY3k1/cGJ5OWZibVY0L2RD/OXBiV0ZuWlQ5MWNt/dzkvYUhSMGNITTZM/eTl3WVhKci9jR3gx/Y3kxaWEzUXRhVzFu/L0xuQmhjbXR3YkhW/ekxtbHYvTDNCeWIy/UjFZM1JwYjI0di9Z/M0poZDJ4bGNpOXdk/V0pzL2FXTXZRM0po/ZDJ4bGNqUmgvTkRW/bE1qQmxOemszWlRF/eC9aV1U0WmpNM01q/ZGlZak01L1ltTXha/RFV4WHpJd01qTXgv/TVRBeU1UZ3hPVFF5/TlRNMS9Oamc0TG1w/d1p5WjNQVE00L05E/QW1jVDAzTlE" alt="Maruti Suzuki Baleno">
+                </div>
+                <div class="car-details-info">
+                    <h2>Maruti Suzuki Baleno</h2>
+                    <p>The Maruti Suzuki Baleno is a premium hatchback known for its stylish design, spacious interior, and fuel-efficient engine options.</p>
+                    <div class="car-price">₹2600/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="baleno">  
-        <a href="baleno.html">                                               <!-- baleno-->
-        <img src="baleno.jpeg" id="balenoimg">
-        </a>
+    <!-- Modal 2 - Honda Civic -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/OGzQg6-Yw6lNmrZc7EboQV2x8G591C7oRjjnq5Fn4xk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vSm5pT0tE/Ulp0LVlWT0xHdWx4/X2dBT2JjNjJwM3Nr/aUo1R18xM2k2MHZt/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/WVhKci9jR3gxY3k1/cGJ5OWZibVY0L2RD/OXBiV0ZuWlQ5MWNt/dzkvYUhSMGNITTZM/eTl3WVhKci9jR3gx/Y3kxaWEzUXRhVzFu/L0xuQmhjbXR3YkhW/ekxtbHYvTDNCeWIy/UjFZM1JwYjI0di9Z/MmhoY21sdmRGOXpk/R0ZuL2FXNW5MM0Ix/WW14cFl5OWwvZUhS/bGNtbHZjbWx0WVdk/bC9NVGN4YW5CbmFX/MWhaMlZmL01qQXlN/ekE0TURneE9ERTMv/TkRnM05EYzROVGt1/YW5Cbi9KbmM5TXpn/ME1DWnhQVGMx" alt="Maruti Suzuki Brezza">
+                </div>
+                <div class="car-details-info">
+                    <h2>Maruti Suzuki Brezza(CNG-petrol)</h2>
+                    <p>The Maruti Suzuki Brezza is a popular compact SUV known for its bold design, fuel-efficient engine options and feature-packed interiors.</p>
+                    <div class="car-price">₹3200/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <br><br><hr><br><br>
-
-    <div class="brezza">                                                <!-- brezza-->
-        <img src="brezza.jpeg" id="brezzaimg">
+    <!-- Modal 3 - Ford Mustang -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/qetyHSmHyrAxmpXh0C6nAC9VcjTj9EUuKlyV4Ixv4SI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vM3lEMzhN/S2FxMjllYlZiRlkt/QklTWmdPUTE4N2Uy/VjRRUkpMOEU5eF85/Yy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9kak5qWVhK/ekxtTnZiUzl0L1pX/UnBZUzlqYjI1MFpX/NTAvTHpZd016TXlN/akF5TVMxby9lWFZ1/WkdGcExXVnNhWFJs/L0xXa3lNQzVxY0dj" alt="Hyundai i20">
+                </div>
+                <div class="car-details-info">
+                    <h2>Hyundai i20(CNG)</h2>
+                    <p>The Hyundai i20 is a premium hatchback known for its stylish design, feature-rich cabin, and smooth performance.</p>
+                    <div class="car-price">₹2600/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <br><br><hr><br><br>
+    <!-- Modal 4 - Toyota RAV4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/OGzQg6-Yw6lNmrZc7EboQV2x8G591C7oRjjnq5Fn4xk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vSm5pT0tE/Ulp0LVlWT0xHdWx4/X2dBT2JjNjJwM3Nr/aUo1R18xM2k2MHZt/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/WVhKci9jR3gxY3k1/cGJ5OWZibVY0L2RD/OXBiV0ZuWlQ5MWNt/dzkvYUhSMGNITTZM/eTl3WVhKci9jR3gx/Y3kxaWEzUXRhVzFu/L0xuQmhjbXR3YkhW/ekxtbHYvTDNCeWIy/UjFZM1JwYjI0di9Z/MmhoY21sdmRGOXpk/R0ZuL2FXNW5MM0Ix/WW14cFl5OWwvZUhS/bGNtbHZjbWx0WVdk/bC9NVGN4YW5CbmFX/MWhaMlZmL01qQXlN/ekE0TURneE9ERTMv/TkRnM05EYzROVGt1/YW5Cbi9KbmM5TXpn/ME1DWnhQVGMx" alt="Maruti Suzuki Brezza">
+                </div>
+                <div class="car-details-info">
+                    <h2>Maruti Suzuki Brezza(Petrol)</h2>
+                    <p>The Maruti Suzuki Brezza is a popular compact SUV known for its bold design, fuel-efficient engine options and feature-packed interiors.</p>
+                    <div class="car-price">₹3000/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="i20">                                                      <!-- i20-->
-        <img src="i20.jpeg" id="i20img">
+    <!-- Modal 5 - Chevrolet Tahoe -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/VpRMVdOsubFLGdEBmCwmpvfFXxcaEKx5c5860Vx22ZU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vbE80Vzd3/c0ZWZkRxN2ZrR2U5/a2xCOHFfTHBjUE1s/NXdISWR6c0NqdzNK/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9ZWFYwYjNa/cGMzUmhMbWx1L0wy/RnpjMlYwY3k5cGJX/Y3YvYm1WM1gyTmhj/bk5mWTI5cy9iM1Z5/WDNaaGNtbGhiblJ6/L0wzTjNhV1owTFdO/dmJHOTEvY2kxemIy/eHBaQzFtYVhKbC9M/WEpsWkM1cWNHYw" alt="Maruti Suzuki Swift">
+                </div>
+                <div class="car-details-info">
+                    <h2>Maruti Suzuki Swift</h2>
+                    <p>The Maruti Suzuki Swift is a peppy, stylish hatchback perfect for city driving, offering a fun driving experience with Maruti’s trusted reliability. It balances modern looks, practicality, and affordability, making it a favorite among young buyers and small families.</p>
+                    <div class="car-price">₹2600/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 - Mercedes-Benz E-Class -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/Gc82pMiBjPsefUCgfagv6QmbSDupPzZ5x51yzETABVM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vbTBGUVpE/MVh2bHpDNmdQbjZ5/Q25iMXZaMl90ZmZC/YkpObG5sam1pam1K/Zy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlq/YjI1MC9aVzUwTG1O/aGNteGxiRzh1L1ky/OXRMM1Z3Ykc5aFpI/TXYvYlc5a1pXd3Zi/V0ZvYVc1ay9jbUV0/ZEdoaGNpMHhMbmRs/L1luQQ" alt="Mahindra Thar">
+                </div>
+                <div class="car-details-info">
+                    <h2>Mahindra Thar</h2>
+                    <p>The Mahindra Thar is a rugged, iconic off-roader with bold styling, go-anywhere capability, and modern comforts. It appeals to adventure seekers and urban explorers alike, blending raw SUV charm with everyday usability.</p>
+                    <div class="car-price">₹6000/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal 7 - Hyundai Creta -->
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal7')">&times;</span>
+            <div class="car-details">
+                <div class="car-details-img">
+                    <img src="https://imgs.search.brave.com/VubSCF96lKH3qHcooAQ8Gc3jLE86WYEhAXhY6quWSrM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vVTBZZlUt/STRyQl9RZUJIamRD/UW9BelZZQURLbmNk/T2pmQ081WnhMS1gy/dy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/YldjdS9aWFJpTW1K/cGJXY3VZMjl0L0wy/bHRaM1l5TDNkcFpI/Um8vTFRNMk9DeG9a/V2xuYUhRdC9NekV4/TEhKbGMybDZaVjl0/L2IyUmxMVEV2Y21W/MFlXbHMvWDJacGJH/VnpMMk55WlhSaC9M/VEUyTmpVME9USTJO/REl0L2NISnZaQzEy/WVhJdWFuQm4" alt="Hyundai Creta">
+                </div>
+                <div class="car-details-info">
+                    <h2>Hyundai Creta</h2>
+                    <p>The Hyundai Creta is a bold and stylish SUV that dominates the midsize segment with its head-turning design, feature-packed cabin, and smooth performance. It strikes the perfect balance between urban sophistication and adventurous spirit, making it a favorite among families and enthusiasts alike..</p>
+                    <div class="car-price">₹4000/day</div>
+                    <button class="rent-now-btn">Rent Now</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
